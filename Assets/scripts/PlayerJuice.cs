@@ -134,7 +134,5 @@ public class PlayerJuice : MonoBehaviour
 			this.dampingPercent = Mathf.Clamp01(dampingPercent);
 			this.rotationPercent = Mathf.Clamp01(rotationPercent);
 		}
-		
-
 	}
 }

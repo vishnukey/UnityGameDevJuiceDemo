@@ -64,6 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff4670a88d96e2aa0aa6830619c57382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: 0}
   mainCam: {fileID: 7732717569815048181}
   speed: 5
   sensitivity: 100
@@ -80,7 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hand: {fileID: 7732717569217132912}
-  projectile: {fileID: 4716844451421249300, guid: f33e5c4fcb72169fe9c78292f17163bc,
+  projectile: {fileID: 4716844451421249300, guid: e22dcb105b999f86e91c13f134076146,
     type: 3}
   gunStrength: 250
   shotTTL: 5

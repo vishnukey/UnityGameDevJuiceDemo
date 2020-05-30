@@ -7,6 +7,7 @@ public class EnemyJuice : MonoBehaviour
 {
     [SerializeField] private float maxHealth;
     [SerializeField] private float bulletStrength;
+    [SerializeField] private ParticleSystem sparksPrefab; 
     private float health;
     
     // Start is called before the first frame update
@@ -21,12 +22,18 @@ public class EnemyJuice : MonoBehaviour
         if (health <= 0) Die();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.CompareTag("Projectile"))
+        Debug.Log($"hit from: {other.gameObject.name}");
+        if (other.collider.CompareTag("Projectile"))
         {
+            var contact = other.contacts[0];
+            var point = contact.point;
+            var norm = contact.normal;
             TakeDamage();
-            Destroy(other.gameObject);
+            var sparks = Instantiate(sparksPrefab, point, Quaternion.LookRotation(norm));
+            Destroy(sparks, sparksPrefab.main.duration);
+            //Destroy(other.gameObject);
         }
     }
 

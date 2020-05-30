@@ -4764,8 +4764,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3166024844877546785}
   - component: {fileID: 4716844451421249300}
+  - component: {fileID: 1621268088598883364}
   m_Layer: 0
-  m_Name: Shot
+  m_Name: ShotJuice
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4803,6 +4804,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1621268088598883364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4939928008330139094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bf8fadd6bee5a8f8e72bef806d2389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8633709291227193037
 GameObject:
   m_ObjectHideFlags: 0
@@ -4891,7 +4904,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8633709291227193037}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
