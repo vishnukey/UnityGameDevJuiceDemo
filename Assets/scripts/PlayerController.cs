@@ -5,10 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    private CharacterController character;
+    [HideInInspector] public CharacterController character;
     private float xRot;
 
-    [SerializeField] private Camera mainCam;
+    public Camera mainCam;
 
     [SerializeField] private float speed = 1f;
 
